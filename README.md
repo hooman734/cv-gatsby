@@ -2,7 +2,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-CV with using Gatsby framework [link to CV](https://hooman-cv-gatsby.herokuapp.com/)
+CV webpage using Gatsby framework [link to CV](https://hooman-cv-gatsby.herokuapp.com/)
 
 
 
