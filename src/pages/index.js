@@ -1,107 +1,143 @@
 import * as React from "react"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-  listStyleType: "none",
-}
-const listItemStyles = {
-  marginBottom: 12,
-  fontWeight: "300",
-  letterSpacing: 1,
-}
-const linkStyles = {
-  color: "#8954A8",
-}
-
-// data
-const links = [
-  {
-    text: "Documentation",
-    url: "https://www.gatsbyjs.com/docs/",
-  },
-  {
-    text: "Tutorials",
-    url: "https://www.gatsbyjs.com/tutorial/",
-  },
-  {
-    text: "Guides",
-    url: "https://www.gatsbyjs.com/tutorial/",
-  },
-  {
-    text: "API Reference",
-    url: "https://www.gatsbyjs.com/docs/api-reference/",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-  },
-  {
-    text: "Cheat Sheet",
-    url: "https://www.gatsbyjs.com/docs/cheat-sheet/",
-  },
-]
-
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main >
       <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site!</span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        {links.map(link => (
-          <li style={listItemStyles}>
-            <a
-              style={linkStyles}
-              href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-            >
-              {link.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C10.6868 22 9.38642 21.7413 8.17317 21.2388C6.95991 20.7362 5.85752 19.9997 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2ZM12 4C8.27 4 5.14 6.55 4.25 10L14 19.75C17.45 18.86 20 15.73 20 12H14.75V13.5H18.2C17.71 15.54 16.24 17.19 14.31 17.94L6.06 9.69C7 7.31 9.3 5.63 12 5.63C14.13 5.63 16 6.67 17.18 8.28L18.41 7.22C16.95 5.26 14.63 4 12 4ZM4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C12.04 20 12.09 20 4 12Z' fill='%23663399'/%3E%3C/svg%3E%0A"
-      />
+      {/* introduction */}
+      <div className="mx-4 px-5 md:mx-9 md:px-9 my-1">
+        <div className="place-self-center">
+          <div className="pd-8 py-6 text-gray-800 hyphens-manual">
+          <h1 className="py-2 font-black text-3xl leading-none">Hooman Hesamyan</h1>
+          <p className="text-sm leading-tight">Seeking a Full-Stack Software Development position</p>
+          {/* end introduction */}
+          
+          <hr className="divide-y divide-gray-700"></hr>
+
+          {/* links */}
+          <div className="grid sm:grid-cols-2 my-2 py-1">
+            <p className="sm:col-span-1 text-gray-600 text-sm">M​argaryan Street, Yerevan, Armenia</p>
+            <div className="flex sm:col-span-1 justify-start sm:justify-end my-2 sm:my-0">
+              <table>
+                <tbody>
+                  <tr className="leading-tight">
+                    <th className="text-left font-bold">Email:</th>
+                    <th className="text-sm text-right px-1 text-gray-600">hesamyan@gmail.com</th>
+                  </tr>
+                  <tr className="leading-tight">
+                    <th className="text-left font-bold">Website:</th>
+                    <th className="text-sm text-right px-1 text-gray-600">hooman.hesamyan.com</th>
+                  </tr>
+                  <tr className="leading-tight">
+                    <th className="text-left font-bold">Linkedin:</th>
+                    <th className="text-sm text-right px-1 text-gray-600">linkedin.com/in/hesamyan</th>
+                  </tr>
+                  <tr className="leading-tight">
+                    <th className="text-left font-bold">GitHub:​</th>
+                    <th className="text-sm text-right px-1 text-gray-600">github.com/hooman734</th>
+                  </tr>
+                  <tr className="leading-tight">
+                    <th className="text-left font-bold">Phone:</th>
+                    <th className="text-sm text-right px-3 text-gray-600">+374-77-281-774</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {/* end links */}
+          {/* education */}
+          <div className="grid lg:grid-cols-2 my-2 lg:my-0">
+            <div className="lg:col-span-1 my-2 lg:my-0">
+              <h3 className="font-black text-2xl text-gray-500">Education</h3>
+              {/* AUA */}
+              <ul className="list-disc list-outside mx-5">
+                <li className="py-1">
+                  <p><span className="bg-gray-200 rounded font-bold">American University of Armenia (AUA), Yerevan, Armenia</span></p>
+                  <p>Master of Science in Computer Science, <span className="align-text-bottom italic">2017 - August 2020</span></p>
+                  <ul className="list-square list-inside mx-5 text-sm">
+                    <li>Data Structures</li>
+                    <li>Algorithms (Intermediate and Advanced)</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Theory of Computing</li>
+                    <li>Network Programming</li>
+                    <li>Computer-Aided Manufacturing (CAM)</li>
+                    <li>Cryptography</li>
+                    <li>Image Processing</li>
+                  </ul>
+                </li>
+              </ul>
+              {/* Azad */}
+              <ul className="list-disc list-outside mx-5 text-gray-700">
+                <li className="py-1">
+                  <p><span className="bg-gray-200 rounded font-bold">Azad University of Gorgan, Gorgan, Iran</span></p>
+                  <p>Bachelor of Science in Civil Engineering, <span className="align-text-bottom italic">2011 - 2014</span></p>
+                </li>
+              </ul>
+              {/* Babol */}
+              <ul className="list-disc list-outside mx-5 text-gray-700">
+                <li className="py-1">
+                  <p><span className="bg-gray-200 rounded font-bold">Babol Polytechnic, Babol, Iran</span></p>
+                  <p>Bachelor of Science in Mechanical Engineering, <span className="align-text-bottom italic">1999 - 2004</span></p>
+                </li>
+              </ul>
+            </div>
+             {/* end education */}
+              {/* technical skills */}
+            <div className="lg:col-span-1 my-4 lg:my-2">
+              <h3 className="font-black text-2xl text-gray-500">Technical Skills</h3>
+              <ul className="list-disc list-outside mx-5 text-gray-700">
+                <li className="py-1">Languages <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">Java, JavaScript, SQL, Python, C/C++, C#, Golang, Lua</span></li>
+                <li className="py-1">Front-End <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">HTML, CSS, jQuery, tailwind, bootstrap, Semantic-UI, Angular.js, Angular, React, Vue.js</span></li>
+                <li className="py-1">Back-End <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">Node.js, Express.js, .NET Core, Koa.js, Flask, Django, Spring Boot</span></li>
+                <li className="py-1">Libraries <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">Tkinter, Sequelize.js, Entity Framework.Core</span></li>
+                <li className="py-1">Database / Storage <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">SQLite, ​MySQL, Postgres, Oracle SQL, MongoDB, S3</span></li>
+                <li className="py-1">Application Software <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">Git, ash, Linux, Heroku, Docker, docker-compose, localstack</span></li>
+              </ul>
+            </div>
+            {/* end technical skills */}
+            {/* experience */}
+            <div className="lg:col-span-1 my-4 lg:my-2">
+              <h3 className="font-black text-2xl text-gray-500">Experience</h3>
+              <ul className="list-disc list-outside mx-5">
+                <li className="py-1">
+                  <p>Graduate School Internship Project - <span className="align-text-bottom italic">Summer 2020</span></p>
+                  <ul className="list-square list-inside mx-5 text-sm">
+                    <li className="py=1">Used Python, Tkinter to create a download-manager with chunking support and GUI S3 browser</li>
+                    <li className="py=1">Used Node.js, Socket.IO, and React/Redux to create an online chat room with channel support</li>
+                    <li className="py=1">Used .NET Core to create a public traffic transportation monitoring with route suggestions</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            {/* end experience */}
+            {/* honors and awards */}
+            <div className="lg:col-span-1 my-4 lg:my-2">
+              <h3 className="font-black text-2xl text-gray-500">Honors and Awards</h3>
+              <ul className="list-disc list-outside mx-5">
+                <li className="py-1">
+                  <p>Chancellor Award and Aurora scholarship from American University of Armenia, <span className="align-text-bottom italic">2019 and 2020</span></p>
+                </li>
+              </ul>
+            </div>
+            {/* end honors and awards */}
+            {/* general skills */}
+            <div className="lg:col-span-1 my-4 lg:my-2">
+              <h3 className="font-black text-2xl text-gray-500">General Skills</h3>
+              <ul className="list-disc list-outside mx-5">
+                <li className="py-1">
+                  <p>English skills: <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">Professional proficiency</span></p>
+                </li>
+                <li className="py-1">
+                  <p>IELTS General: <span className="text-gray-800 font-bold align-text-top text-sm bg-gray-200 rounded">6.5</span></p>
+                </li>
+              </ul>
+            </div>
+            {/* end general skills */}
+          </div>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
