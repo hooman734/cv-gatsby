@@ -1,3 +1,12 @@
+# placeholder-api
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+High performance image placeholder generator API with caching support
+
+Basically open-source alternative to [placeholder.com](https://placeholder.com/)
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
