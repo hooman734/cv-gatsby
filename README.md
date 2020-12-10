@@ -2,9 +2,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-High performance image placeholder generator API with caching support
+CV with using Gatsby framework [link to CV](https://hooman-cv-gatsby.herokuapp.com/)
 
-Basically open-source alternative to [placeholder.com](https://placeholder.com/)
+
 
 
 <p align="center">
