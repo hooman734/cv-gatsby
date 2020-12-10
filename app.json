@@ -1,4 +1,12 @@
 {
+    "name": "CV-Gatsby",
+    "description": "CV webpage using Gatsby framework",
+    "repository": "https://github.com/hooman734/cv-gatsby",
+    "keywords": [
+    "React",
+    "Gatsby",
+    "Node"
+    ],
     "buildpacks": [
       {
         "url": "heroku/nodejs"
